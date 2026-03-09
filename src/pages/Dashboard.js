@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import generatePDF, { Resolution, Margin } from "react-to-pdf";
+import generatePDF from "react-to-pdf";
 
 const Dashboard = () => {
   const logout = () => {
