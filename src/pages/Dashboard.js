@@ -410,6 +410,7 @@ const TraditionalTemplate = ({ data, age }) => (
     )}
     <div className="space-y-8">
       <Section
+        className="uppercase"
         title="Personal Information"
         items={[
           ["Full Name", data.name],
@@ -420,6 +421,7 @@ const TraditionalTemplate = ({ data, age }) => (
         color="text-red-900"
       />
       <Section
+        className="uppercase"
         title="Family Details"
         items={[
           ["Father's Name", data.fatherName],
@@ -430,6 +432,7 @@ const TraditionalTemplate = ({ data, age }) => (
         color="text-red-900"
       />
       <Section
+        className="uppercase"
         title="Education & Career"
         items={[
           ["Qualification", data.education],
@@ -441,6 +444,7 @@ const TraditionalTemplate = ({ data, age }) => (
       />
       {data.horoscopeShow && (
         <Section
+          className="uppercase"
           title="Horoscope Details"
           items={[
             ["Rashi", data.rashi],
@@ -456,7 +460,7 @@ const TraditionalTemplate = ({ data, age }) => (
           items={[
             ["Phone", data.phone],
             ["Email", data.email],
-            ["Address", data.address],
+            ["Address", data.address?.toUpperCase()],
           ]}
           color="text-red-900"
         />
